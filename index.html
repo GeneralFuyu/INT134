@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale" />
-    <title>Doucment INT134</title>
+    <title>FastAPI Demo</title>
   </head>
   <body>
-    <h1>Hello World</h1>
-    <h2>Index</h2>
+    <h1>Hello from Frontend!</h1>
+    <p>Click the button to call FastAPI backend:</p>
+    <button
+      onclick="fetch('/api/hello').then(r => r.json()).then(d => alert(d.message))"
+    >
+      Call Backend
+    </button>
   </body>
 </html>
